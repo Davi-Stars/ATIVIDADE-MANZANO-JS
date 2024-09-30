@@ -1,0 +1,121 @@
+// Exerciço 7-A: Sominha da paz
+let A = parseInt(prompt("Digite A:"));
+let B = parseInt(prompt("Digite B:"));
+A = A + B;
+console.log(A);  // Resultado fresquinho KKKKKK
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 7-B: Quem é o maior? Vamos resolver esse baguio (Professora Aurora pira KKKKKKK)
+A = parseInt(prompt("Digite A:"));
+B = parseInt(prompt("Digite B:"));
+if (A > B) {
+    console.log("A é maior, sem nem piscar!");
+} else {
+    console.log("B é mais grandão, e é isso."); // Lá ele KKKKKK
+}
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 7-C: Batalha épica entre A, B e C - Quem vai ganhar?
+A = parseInt(prompt("Digite A:"));
+B = parseInt(prompt("Digite B:"));
+let C = parseInt(prompt("Digite C:"));
+if (A > B && A > C) {
+    console.log("A reina soberano!");
+} else if (B > C) {
+    console.log("B dominou geral!");
+} else {
+    console.log("C chegou na voadora!");
+}
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 3.10-A: Bora multiplicar e somar que o show não pode parar!
+let A = parseInt(prompt("Digite A:"));
+let B = parseInt(prompt("Digite B:"));
+let C = parseInt(prompt("Digite C:"));
+let D = parseInt(prompt("Digite D:"));
+let P = A * C;
+let S = B + D;
+console.log("Produto: ", P, "Soma: ", S);  // Diretão, nada de firula
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 3.10-B: Aumenta meu salário aí! Tá foda...
+let SM = parseFloat(prompt("Salário mensal:"));
+let PR = parseFloat(prompt("Percentual de reajuste:"));
+let NS = SM + (SM * PR / 100);
+console.log("Novo Salário: ", NS);  // To ricooo (ou quase)
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 3.10-C: O dia da eleição! Vamo contar esses votos
+let votosA = parseInt(prompt("Votos para A:"));
+let votosB = parseInt(prompt("Votos para B:"));
+let votosC = parseInt(prompt("Votos para C:"));
+let nulos = parseInt(prompt("Votos nulos:"));
+let brancos = parseInt(prompt("Votos em branco:"));
+let total = votosA + votosB + votosC + nulos + brancos;
+let percVotos = (votosA + votosB + votosC) / total * 100;
+let percA = votosA / total * 100;
+let percB = votosB / total * 100;
+let percC = votosC / total * 100;
+let percNulos = nulos / total * 100;
+let percBrancos = brancos / total * 100;
+console.log("Total de eleitores: ", total);
+console.log("Percentual de votos válidos: ", percVotos.toFixed(2) + "%");
+console.log("Percentual de votos A: ", percA.toFixed(2) + "%");
+console.log("Percentual de votos B: ", percB.toFixed(2) + "%");
+console.log("Percentual de votos C: ", percC.toFixed(2) + "%");
+console.log("Percentual de votos nulos: ", percNulos.toFixed(2) + "%");
+console.log("Percentual de votos brancos: ", percBrancos.toFixed(2) + "%");  // Olha aí as parciais...
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 5.1.1-A: A famosa tabuada do 5, que todo mundo conhece
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i} * 5 = ${i * 5}`);  // Multiplica que vai!
+}
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 5.1.1-B: Soma até 100 porque a matemática não para
+let soma = 0;
+for (let i = 1; i <= 100; i++) {
+    soma += i;
+}
+console.log("Soma total: ", soma);  // Soma top pra quem gosta de número grande
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 5.2.1-A: Vamos fazer o quadrado de tudo que é número, só alegria
+for (let i = 15; i <= 200; i++) {
+    console.log(`Quadrado de ${i} = ${i * i}`);  // Porque aqui é só quadrado, mané!
+}
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 5.2.1-B: Só os pares de 1 a 500... vamo filtrar!
+soma = 0;
+for (let i = 1; i <= 500; i++) {
+    if (i % 2 === 0) {
+        soma += i;
+    }
+}
+console.log("Soma dos pares: ", soma);  // Par ou ímpar? Aqui é só parzão!
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 5.6.1-A: Mais quadrados pra gente treinar!
+for (let i = 15; i <= 200; i++) {
+    console.log(`Quadrado de ${i} = ${i * i}`);  // Matemática é vida, só vai!
+}
+
+//////////////////////////////////////////////////////////////////
+
+// Exerciço 5.6.1-B: Tabuada, aquela clássica de fazer todo mundo suar
+let num = parseInt(prompt("Digite um número para a tabuada:"));
+for (let i = 1; i <= 10; i++) {
+    console.log(`${num} * ${i} = ${num * i}`);  // Tá aqui a tabuada completinha, só seguir o fluxo
+}
